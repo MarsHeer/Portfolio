@@ -7,8 +7,7 @@ function Desk({ callback }) {
   const [height, setHeight] = useState();
   const [transition, setTransition] = useState(false);
   useEffect(() => {
-    window.onresize = handleResize;
-
+    window.addEventListener("resize", handleResize);
     handleResize();
 
     let text = "Loading marcOS...";
@@ -21,7 +20,7 @@ function Desk({ callback }) {
     Object.keys(array).map((key) => {
       setTimeout(
         () => (document.getElementById("text").innerHTML += array[key]),
-        key * 200
+        key * 50
       );
     });
 
@@ -29,25 +28,34 @@ function Desk({ callback }) {
       Object.keys(array2).map((key) => {
         setTimeout(
           () => (document.getElementById("text2").innerHTML += array2[key]),
-          key * 200
+          key * 50
         );
       });
-    }, 3500);
+    }, 875);
 
     setTimeout(() => {
       Object.keys(array3).map((key) => {
         setTimeout(
           () => (document.getElementById("text3").innerHTML += array3[key]),
-          key * 200
+          key * 50
         );
       });
-    }, 7000);
+    }, 1750);
 
     setTimeout(() => {
-      window.addEventListener("keypress", () => setTransition(true));
-      window.addEventListener("touchstart", () => setTransition(true));
-      window.addEventListener("mousedown", () => setTransition(true));
-    }, 10000);
+      window.addEventListener("keypress", () => {
+        setTransition(true);
+        window.removeEventListener("resize", handleResize);
+      });
+      window.addEventListener("touchstart", () => {
+        setTransition(true);
+        window.removeEventListener("resize", handleResize);
+      });
+      window.addEventListener("mousedown", () => {
+        setTransition(true);
+        window.removeEventListener("resize", handleResize);
+      });
+    }, 2750);
   }, []);
 
   useEffect(() => {
@@ -62,6 +70,8 @@ function Desk({ callback }) {
 
   let computerStyle = {
     zIndex: 1,
+    fontFamily: '"Press Start 2P", cursive',
+    cursor: "pointer",
     overflow: "hidden",
     position: "absolute",
     bottom: "10px",
@@ -72,6 +82,7 @@ function Desk({ callback }) {
     minWidth: "500px",
     height: "40vw",
     minHeight: "425px",
+    color: "#ebebeb",
     backgroundImage: "url(" + computer + ")",
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
