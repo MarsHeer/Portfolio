@@ -362,3 +362,14 @@
   width: 20px;
   margin-right: 5px;
 }
+
+@media (max-width: 750px) {
+  .window {
+    left: 0;
+    top: 35px;
+    width: 100%;
+    height: calc(100vh);
+    min-height: 0;
+    min-width: 0;
+  }
+}

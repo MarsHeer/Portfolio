@@ -88,11 +88,10 @@ function About({ closeAbout }) {
             <a href="https://curiouscat.me/curiouscat" target="_blank">
               CuriousCat
             </a>{" "}
-            is an anonymous Q&A website and app which I cofounded and operated
-            from 2016 until its acquisition in 2018. It serves{" "}
-            <b>1.5M DAU worldwide,</b> and is growing to this day. My
-            responsibilities in the CuriousCat project included, but were not
-            limited to:
+            is an anonymous Q&A website and app which I co-founded and operated
+            from 2016 until its acquisition in 2018. It serves <b>1.5M DAU</b>
+            worldwide and is growing to this day. My responsibilities in the
+            CuriousCat project included, but were not limited to:
           </paragraph>
           <ul style={{ margin: "5px" }}>
             <li class={styles.li}>
@@ -102,7 +101,7 @@ function About({ closeAbout }) {
               Design, execution, and analysis of A/B tests.
             </li>
             <li class={styles.li}>
-              Designing and implementing succesful product & design iterations
+              Designing and implementing successful product & design iterations
               based on user data.
             </li>
             <li class={styles.li}>
