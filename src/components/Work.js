@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/Work.module.css";
 import CC from "../files/svg/cc.svg";
-import BCN from "../files/png/beacon.png";
+import TAWA from "../files/png/tawa.png";
 import TAW from "../files/png/taw.png";
 import NDC from "../files/png/node.jpg";
 import LBM from "../files/png/libremoji.png";
+import SPC from "../files/png/supacharged.png";
+import CYN from "../files/png/cyn.png";
 
 function Work({ closeWork }) {
   var pos1 = 0,
@@ -72,14 +74,27 @@ function Work({ closeWork }) {
           <div
             onClick={() =>
               window.open(
-                "https://apps.apple.com/es/app/beacon-anonymous-q-a/id1483493378",
+                "https://apps.apple.com/es/app/take-a-walk-see-the-world/id1558201752?ref=producthunt",
                 "_blank"
               )
             }
             class={styles.icon}
           >
-            <img class={styles.img} src={BCN} />
-            <p class={styles.iconText}>Beacon</p>
+            <img class={styles.img} src={TAWA} />
+            <p class={styles.iconText}>Take a Walk (iOS App)</p>
+          </div>
+
+          <div
+            onClick={() =>
+              window.open(
+                "https://play.google.com/store/apps/details?id=com.pitagorax.taw&ref=producthunt",
+                "_blank"
+              )
+            }
+            class={styles.icon}
+          >
+            <img class={styles.img} src={TAWA} />
+            <p class={styles.iconText}>Take a Walk (Android App)</p>
           </div>
 
           <div
@@ -106,6 +121,22 @@ function Work({ closeWork }) {
           >
             <img class={styles.img} src={LBM} />
             <p class={styles.iconText}>Libremoji</p>
+          </div>
+
+          <div
+            onClick={() => window.open("https://supacharged.me", "_blank")}
+            class={styles.icon}
+          >
+            <img class={styles.img} src={SPC} />
+            <p class={styles.iconText}>Supacharged</p>
+          </div>
+
+          <div
+            onClick={() => window.open("https://canyounotify.com", "_blank")}
+            class={styles.icon}
+          >
+            <img class={styles.img} src={CYN} />
+            <p class={styles.iconText}>CanYouNotify</p>
           </div>
         </div>
       </div>
