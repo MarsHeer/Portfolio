@@ -81,7 +81,7 @@ function Work({ closeWork }) {
             class={styles.icon}
           >
             <img class={styles.img} src={TAWA} />
-            <p class={styles.iconText}>Take a Walk (iOS App)</p>
+            <p class={styles.iconText}>Take a Walk<br/>(iOS App)</p>
           </div>
 
           <div
@@ -94,7 +94,7 @@ function Work({ closeWork }) {
             class={styles.icon}
           >
             <img class={styles.img} src={TAWA} />
-            <p class={styles.iconText}>Take a Walk (Android App)</p>
+            <p class={styles.iconText}>Take a Walk<br/>(Android App)</p>
           </div>
 
           <div
