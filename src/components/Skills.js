@@ -50,8 +50,8 @@ function Skills({ closeSkills }) {
   }
 
   return (
-    <div id="win" class={styles.window}>
-      <div id="nav" class={styles.navbar}>
+    <div id='win' class={styles.window}>
+      <div id='nav' class={styles.navbar}>
         <div onClick={() => closeSkills()} class={styles.close}></div>
         <div
           onClick={() => {
@@ -68,7 +68,7 @@ function Skills({ closeSkills }) {
       <div id={styles.folderHolder}>
         <div>
           <div class={styles.gridcontainer}>
-            <div class={styles.Header}>19 items, 321MB available</div>
+            <div class={styles.Header}>15 items, 321MB available</div>
             <div class={styles.Title}>Skill</div>
             <div class={styles.Exp}>Experience</div>
             <div class={styles.Skill}>
@@ -79,7 +79,7 @@ function Skills({ closeSkills }) {
               <img class={styles.img} src={XD} />
               Adobe XD
             </div>
-            <div class={styles.Time2}>5 years</div>
+            <div class={styles.Time2}>6 years</div>
             <div class={styles.Skill3}>
               <img class={styles.img} src={ID} />
               Adobe InDesign
@@ -97,7 +97,7 @@ function Skills({ closeSkills }) {
               {" "}
               <img class={styles.img} src={PS} /> Adobe Photoshop
             </div>
-            <div class={styles.Time6}>2 years</div>
+            <div class={styles.Time6}>3 years</div>
             <div class={styles.Skill7}>
               {" "}
               <img class={styles.img} src={FG} /> Figma
@@ -110,15 +110,16 @@ function Skills({ closeSkills }) {
             <div class={styles.Skill9}>
               <img class={styles.img} src={JS} /> HTML & CSS & JS
             </div>
-            <div class={styles.Time9}>1 year</div>
+            <div class={styles.Time9}>2 years</div>
             <div class={styles.Skill10}>
-              <img class={styles.img} src={RJ} /> NodeJS, ReactJS & NextJS
+              <img class={styles.img} src={RJ} /> ReactJS & NextJS
             </div>
-            <div class={styles.Time10}>{"< 1 year"}</div>
+            <div class={styles.Time10}>{"2 years"}</div>
             <div class={styles.Skill11}>
-              <img class={styles.img} src={MD} /> MySQL & MariaDB
+              <img class={styles.img} src={MD} />
+              NodeJS & MySQL
             </div>
-            <div class={styles.Time11}>{"< 1 year"}</div>
+            <div class={styles.Time11}>{"1 year"}</div>
           </div>
         </div>
       </div>

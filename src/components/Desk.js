@@ -75,8 +75,6 @@ function Desk({ callback }) {
     overflow: "hidden",
     position: "absolute",
     bottom: "10px",
-    left: 0,
-    right: 0,
     margin: "auto",
     width: "50vw",
     minWidth: "500px",
@@ -127,10 +125,10 @@ function Desk({ callback }) {
       ) : (
         <></>
       )}
-      <div class={styles.computer} id="computer" style={computerStyle}>
-        <p id="text" style={pStyle}></p>
-        <p id="text2" style={pStyle2}></p>
-        <p id="text3" style={pStyle3}></p>
+      <div class={styles.computer} id='computer' style={computerStyle}>
+        <p id='text' style={pStyle}></p>
+        <p id='text2' style={pStyle2}></p>
+        <p id='text3' style={pStyle3}></p>
       </div>
     </div>
   );
