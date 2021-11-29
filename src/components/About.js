@@ -4,6 +4,7 @@ import Logo from "../files/svg/os-icon.svg";
 import CC from "../files/png/cc.png";
 import VV from "../files/png/vonvon.jpg";
 import PX from "../files/png/pitagorax.png";
+import MB from "../files/png/marbill.png";
 
 function About({ closeAbout }) {
   var pos1 = 0,
@@ -147,6 +148,40 @@ function About({ closeAbout }) {
             </li>
           </ul>
         </div>
+
+        <div class={styles.timeline}>
+          <div class={styles.companyTitle}>
+            <img class={styles.companyTitleImg} src={MB} />
+            <p style={{ margin: 0 }}>
+              <b>Marbill</b> | UX Analyst (June - Nov) & Technical Product Owner (Nov - Dec)
+            </p>
+          </div>
+          <p style={{ color: "gray", margin: 0 }}>
+            Side Project (June 2021 - Dec. 2021)
+          </p>
+          <paragraph class={styles.paragraph}>
+            Marbill is a technology company specialized in the subscription and e-commerce industries.
+            I began my career with them as a UX Analyst, before transitioning into the role of Technical Product Owner, 5 months later.
+            Some of my responsibilities include: 
+          </paragraph>
+          <ul style={{ margin: "5px" }}>
+            <li class={styles.li}>Designing, implementing & analyzing A/B tests</li>
+            <li class={styles.li}>Improved average site performance by up to 90%</li>
+            <li class={styles.li}>
+              Improved CR across a suite of products upwards of 100%
+            </li>
+            <li class={styles.li}>
+              Designing and developing new product verticals
+            </li>
+            <li class={styles.li}>
+              Optimizing revenue KPIs through the improvement and implementation of new features
+            </li>
+            <li class={styles.li}>
+              Presenting work and ideas to C-Levels, Investors, etc...
+            </li>
+          </ul>
+        </div>
+
         <div class={styles.timeline}>
           <div class={styles.companyTitle}>
             <img class={styles.companyTitleImg} src={PX} />
@@ -155,7 +190,7 @@ function About({ closeAbout }) {
             </p>
           </div>
           <p style={{ color: "gray", margin: 0 }}>
-            Side Project (2019 - Present)
+            Side Project (2019 - 2021)
           </p>
           <paragraph class={styles.paragraph}>
             PitagoraX is a small company I set up with some colleagues as a side
@@ -183,7 +218,7 @@ function About({ closeAbout }) {
             </li>
             <li class={styles.li}>
               I lived in 🇮🇪 Ireland for 7 years, worked in 🇰🇷 Seoul for 6 months
-              and am currently located in 🇪🇸 Galicia.
+              and am currently located in Marbella 🇪🇸.
             </li>
             <li class={styles.li}>
               My mother tongue is Spanish and I am also fluent in English and
