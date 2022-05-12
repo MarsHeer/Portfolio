@@ -9,7 +9,7 @@
 /coverage
 
 # production
-#/build
+npm install gh-pages — save-dev/build
 
 # misc
 .DS_Store
